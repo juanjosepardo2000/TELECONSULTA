@@ -1,0 +1,8 @@
+<!-- android/app/src/main/res/values/strings.xml -->
+<resources>
+    <string name="app_name">Medical Teleconsultas MVP</string>
+    <string name="title_activity_main">Medical Teleconsultas MVP</string>
+    <string name="package_name">com.medical.teleconsultas</string>
+    <string name="custom_url_scheme">com.medical.teleconsultas</string>
+    <string name="server_client_id">TU_WEB_CLIENT_ID.apps.googleusercontent.com</string>
+</resources>

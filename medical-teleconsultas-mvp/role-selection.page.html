@@ -1,0 +1,53 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Seleccionar Rol</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="role-selection-container">
+    <div class="welcome-section">
+      <ion-icon name="medical-outline" class="main-icon"></ion-icon>
+      <h1>Medical Teleconsultas</h1>
+      <p>Bienvenido a nuestra plataforma de teleconsultas médicas</p>
+    </div>
+
+    <ion-card class="role-card">
+      <ion-card-header>
+        <ion-card-title>¿Eres Doctor o Paciente?</ion-card-title>
+        <ion-card-subtitle>Selecciona tu rol para continuar</ion-card-subtitle>
+      </ion-card-header>
+      
+      <ion-card-content>
+        <ion-button 
+          expand="block" 
+          fill="solid" 
+          color="primary"
+          (click)="selectRole('doctor')"
+          class="role-button">
+          <ion-icon name="medical" slot="start"></ion-icon>
+          Soy Doctor
+          <ion-icon name="chevron-forward" slot="end"></ion-icon>
+        </ion-button>
+        
+        <ion-button 
+          expand="block" 
+          fill="outline" 
+          color="secondary"
+          (click)="selectRole('patient')"
+          class="role-button">
+          <ion-icon name="person" slot="start"></ion-icon>
+          Soy Paciente
+          <ion-icon name="chevron-forward" slot="end"></ion-icon>
+        </ion-button>
+      </ion-card-content>
+    </ion-card>
+
+    <div class="info-section">
+      <p class="info-text">
+        <ion-icon name="shield-checkmark" color="success"></ion-icon>
+        Plataforma segura y confiable
+      </p>
+    </div>
+  </div>
+</ion-content>
